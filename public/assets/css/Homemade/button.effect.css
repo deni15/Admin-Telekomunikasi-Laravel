@@ -1,0 +1,131 @@
+
+/*Effect Tombol*/
+
+/*Effect Grow*/
+
+    
+    .grow {
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    .grow:hover {
+        transform: scale(1.1);
+    }
+
+/*Effect shrink*/
+
+    
+    .shrink {
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    .shrink:hover {
+        transform: scale(0.8); 
+    }
+
+/*Effect opacity*/
+
+    
+    .opacity {
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        opacity: 0.5;
+    }
+    .opacity:hover{
+        opacity: 1;
+    }
+
+/*Effect swing*/
+
+
+    .swing {
+       
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    .swing:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+    }
+    
+    @keyframes swing {
+        15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+        }
+        30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+        }
+        50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+        }
+        65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+        }
+        80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+        }
+        100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+    }
+
+/*Effect rotasi*/
+
+    
+    .rotasi {
+       
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    .rotasi:hover{
+        transform: rotateZ(-30deg);
+    }
+
+/*Effect shadow*/
+
+    
+    .push {
+        color: #1D9AF2;
+        background-color: #292D3E;
+        border: 1px solid #1D9AF2;
+        border-radius: 4px;
+        padding: 0 15px;
+        cursor: pointer;
+        height: 32px;
+        font-size: 14px;
+        transition: all 0.2s ease-in-out;
+    }
+    .push:hover {
+    box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+    transform: translateX(-3px);
+    }
+
+/*Effect ripple*/
+
+
+    .ripple {
+        
+        cursor: pointer;
+    
+        box-shadow: 0 0 4px #999;
+        outline: none;
+        background-position: center;
+        transition: background 0.8s;
+    }
+    .ripple:hover{
+        background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%)
+        center/15000%;
+        color: white;
+    }
+    
+    .ripple:active{
+        background-color: #292d3e;
+        background-size: 100%;
+        transition: background 0s;
+    }

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.section-1{
+    background: url('/assets/img/section1.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.bottom-gradient{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1000px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(10, 10, 10) ,transparent 100%);
+}
+.section-2{
+    background-color: black;
+    background: linear-gradient(0deg, black, rgb(10, 10, 10)  100%);
+}
+
+.top-gradient{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1000px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(10, 10, 10) ,transparent 100%);
+}
